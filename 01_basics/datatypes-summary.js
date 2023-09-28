@@ -8,7 +8,7 @@
 //        Number => number
 //        String  => string
 //        Boolean  => boolean
-//        null  => object
+//        null  => object                      // IMP
 //        undefined  =>  undefined
 //        Symbol  =>  symbol
 //        BigInt  =>  bigint
@@ -50,6 +50,6 @@ const myFunction = function(){
 }
 
 // console.log(heros);
-console.log(typeof myFunction);
+console.log(typeof userEmail);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
