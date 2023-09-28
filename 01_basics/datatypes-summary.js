@@ -32,7 +32,7 @@ let userEmail;
 const id = Symbol('123')           //symbol always gives unique value even if inside values are same
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 //  const bigNumber = 3456543576654356754n
 
@@ -50,6 +50,33 @@ const myFunction = function(){
 }
 
 // console.log(heros);
-console.log(typeof userEmail);
+// console.log(typeof userEmail);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+// Whenever stack memory is used then we get the copy of the variable while whenever heap memory is used we get the reference of the variable.
+
+let myYoutubename = "namedotcom"
+let anothername = myYoutubename
+anothername = "newnamedotcom"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+let userOne = {
+    user: "user@google.com",
+    id: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "newuser@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
