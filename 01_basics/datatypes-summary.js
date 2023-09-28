@@ -62,6 +62,7 @@ const myFunction = function(){
 
 // Whenever stack memory is used then we get the copy of the variable while whenever heap memory is used we get the reference of the variable.
 
+            //Stack
 let myYoutubename = "namedotcom"
 let anothername = myYoutubename
 anothername = "newnamedotcom"
@@ -69,6 +70,7 @@ anothername = "newnamedotcom"
 console.log(myYoutubename)
 console.log(anothername)
 
+            //Heap
 let userOne = {
     user: "user@google.com",
     id: "user@ybl"
