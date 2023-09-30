@@ -1,3 +1,5 @@
+// object as a construtor
+
 // const tinderUser = new Object()          //singleton object
 const tinderUser = {}                       //non-singleton object
 
