@@ -42,9 +42,9 @@ const chai = () => {
                                                     // return keyword else Explicit return.
 // const addTwo = (num1, num2) => ( num1 + num2 )   
 
-                                                          // IMP Concept
-const addTwo = (num1, num2) => ({username: "harshil"})  //it will not work without wrapping object();
-
+                                                                    // IMP Concept
+const addTwo = (num1, num2) => ({username: "harshil"})      // it will not work without wrapping()
+                                                            // part of the object.
 console.log(addTwo(3, 4))
 
 // const myArray = [2, 5, 3, 7, 8]
