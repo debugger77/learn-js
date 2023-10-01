@@ -19,8 +19,8 @@ const real_another_array = another_array.flat(Infinity) //it concatenates all su
 // console.log(real_another_array);                     //upto given depth, here infinity is depth.
 
 
-console.log(Array.isArray("Harshil"))
-console.log(Array.from("Harshil"))
+console.log(Array.isArray("Harshil"))          // It checks whether passed value is array or not.
+console.log(Array.from("Harshil"))              // creates an array of passed value
 console.log(Array.from({name: "harshil"}))      // interesting -> for this case answer is [], because
                             //  we have to specify whether we have to make array from keys or values.
 
