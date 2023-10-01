@@ -26,7 +26,7 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
-// const obj3 = { obj1, obj2 }
+// const obj3 = { obj1, obj2 }                                // nested objects
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
 
 const obj3 = {...obj1, ...obj2, ...obj4}                //spread operator
@@ -38,16 +38,16 @@ const users = [       //when values come from databases then it comes in the for
         email: "h@gmail.com"
     },
     {
-        id: 1,
+        id: 2,
         email: "h@gmail.com"
     },
     {
-        id: 1,
+        id: 3,
         email: "h@gmail.com"
     },
 ]
 
-users[1].email
+// console.log(users[2].id)
 // console.log(tinderUser);
 
 // console.log(Object.keys(tinderUser));           //data type is array for all these 3.
