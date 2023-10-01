@@ -8,8 +8,8 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 // ***********Array methods***************
 
-// myArr.push(6)
-// myArr.push(7)
+// myArr.push(6)              // push adds element at the back 
+// myArr.push(7)              // pop removes element from the back
 // myArr.pop()
 
 // myArr.unshift(9)         // unshift adds the element at the beginning
