@@ -43,7 +43,7 @@ const chai = () => {
 // const addTwo = (num1, num2) => ( num1 + num2 )   
 
                                                           // IMP Concept
-const addTwo = (num1, num2) => ({username: "harshil"})    // it will not work without wrapping ();
+const addTwo = (num1, num2) => ({username: "harshil"})  //it will not work without wrapping object();
 
 console.log(addTwo(3, 4))
 
