@@ -4,9 +4,9 @@
     // for of
 const arr = [1, 2, 3, 4, 5]
 
-for (const num of arr) {
-    // console.log(num);
-}
+for (const num in arr) {
+    console.log(num);            // Here using for of loop we get values  
+}                                // and using for in loop we get keys.
 
 const greetings = "Hello world!"
 for (const greet of greetings) {
@@ -26,11 +26,11 @@ map.set('IN', "India")
 // Iteration of map using for of loop
 
 for (const key of map) {           // we get keys and values as an array of object
-    console.log(key);              
+    // console.log(key);              
 }
 
 for (const [key, value] of map) {           // we get keys and values as a string type
-    console.log(key, ':-', value);          // better to use this destructuring method.
+    // console.log(key, ':-', value);          // better to use this destructuring method.
 }      
 
 const myObject = {
