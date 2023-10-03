@@ -25,9 +25,13 @@ map.set('IN', "India")
 
 // Iteration of map using for of loop
 
-for (const [key, value] of map) {           // if only 1 variable is used after const then we get 
-    console.log(key, ':-', value);          // arrays of keys and values present in map
+for (const key of map) {           // we get keys and values as an array of object
+    console.log(key);              
 }
+
+for (const [key, value] of map) {           // we get keys and values as a string type
+    console.log(key, ':-', value);          // better to use this destructuring method.
+}      
 
 const myObject = {
     game1: 'NFS',
