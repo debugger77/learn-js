@@ -3,6 +3,9 @@
 ## Project link
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-xbgxse?file=index.html)
 
+## Practice link
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+
 # Solution code
 
 ## project 1
