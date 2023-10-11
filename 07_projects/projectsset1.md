@@ -217,8 +217,8 @@ window.addEventListener('keydown', (e) => {
 const randomColor = function () {
   const hex = '0123456789ABCDEF';
   let color = '#';
-  for (let i = 0; i < 6; i++) {                     // as it is hexadecimal
-    color += hex[Math.floor(Math.random() * 16)];
+  for (let i = 0; i < 6; i++) {                     // here 6 as it is hexadecimal i.e 6 digits 
+    color += hex[Math.floor(Math.random() * 16)];   // we want 16 values
   }
   return color;
 };
