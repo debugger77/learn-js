@@ -13,7 +13,7 @@ function createUser(username, score) {
     this.score = score
 }
 
-// injecting properties to a function
+// injecting properties to a function or an object
 createUser.prototype.increment = function() {
     this.score++
     console.log(this.score)
