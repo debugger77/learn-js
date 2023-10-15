@@ -82,10 +82,11 @@ async function consumePromiseFive(){
 
 consumePromiseFive()
 
+                            // fetch() with try-catch
 // async function getAllUsers(){
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-//         const data = await response.json()                                       // here await is must 
+//         const data = await response.json()                    // here await is must 
 //         console.log(data);
 //     } catch (error) {
 //         console.log("E: ", error);
@@ -94,6 +95,7 @@ consumePromiseFive()
 
 //getAllUsers()
 
+                // fetch() with then-catch
 fetch('https://api.github.com/users/debugger77')
 .then((response) => {
     return response.json()
