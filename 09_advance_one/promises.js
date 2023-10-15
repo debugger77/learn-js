@@ -9,7 +9,7 @@ const promiseOne = new Promise(function(resolve, reject) {
 })
 
     // consumption of promise 
-promiseOne.then(function(){             // here then direct links to resolve    // keyword then
+promiseOne.then(function(){             // here keyword then direct links to resolve    
     console.log("Promise consumed");
 })
 
@@ -25,11 +25,11 @@ new Promise(function(resolve, reject){
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
-        resolve({username: "Code", email: "code@example.com"})
+        resolve({username: "Code", email: "code@example.com"})      // resolve() generally has object
     }, 1000)
 })
 
-promiseThree.then(function(user){       // user gets access to the data passed in resolve().
+promiseThree.then(function(user){       // user contains the data passed in resolve().
     console.log(user);
 })
 
@@ -51,8 +51,8 @@ const promiseFour = new Promise(function(resolve, reject){
     return user.username
 }).then((username) => {            // IMP      // username will contain returned value of above part. 
     console.log(username);
-}).catch(function(error){                       // finally() will always be executed.
-    console.log(error);                     
+}).catch(function(error){                       
+    console.log(error);                         // finally() will always be executed.
 }).finally(() => console.log("The promise is either resolved or rejected"))
 
 
@@ -65,9 +65,10 @@ const promiseFive = new Promise(function(resolve, reject){
             reject('ERROR: JS went wrong')
         }
     }, 1000)
-});
+})
 
 // Each time when an async function is called, it returns a new Promise which will be resolved with the value returned by the async function, or rejected with an exception uncaught within the async function.
+// await keyword is only valid inside async function.
 
             // async await -> try catch
 async function consumePromiseFive(){        
