@@ -15,7 +15,7 @@
 //     }
 // }
 
-// const js = new User("js", "js@gmail.com", "123")
+// const js = new User("js", "js@gmail.com", "123")     // object is created outside of the class.
 
 // console.log(js.encryptPassword());
 // console.log(js.changeUsername());
