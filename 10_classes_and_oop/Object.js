@@ -24,15 +24,15 @@ createUser.prototype.printMe = function() {
 }
 
 // Object creation
-const chai = new createUser("chai", 25)  // here new keyword is must or this error will occur -> Cannot 
-const tea = new createUser("tea", 250)   // read properties of undefined
+const java = new createUser("java", 25)  // here new keyword is must or this error will occur -> Cannot 
+const Js = new createUser("Js", 250)   // read properties of undefined
 
 // function calling
-chai.printMe()
-chai.increment()
+java.printMe()
+java.increment()
 
-tea.printMe()
-tea.increment()
+Js.printMe()
+Js.increment()
 /*
 
 Here's what happens behind the scenes when the new keyword is used:
