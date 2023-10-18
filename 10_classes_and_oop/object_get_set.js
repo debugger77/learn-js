@@ -8,8 +8,8 @@ const User = {
     },
 
     set email(value){
-        this._email = value
-    }
+        this._email = value     // while setting variables can change but while getting it can't
+    }                           // here email will also work
 }
 
 const tea = Object.create(User)
