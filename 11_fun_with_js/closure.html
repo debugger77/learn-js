@@ -62,7 +62,7 @@
         function clickHandler(color){
             // document.body.style.backgroundColor = `${color}`
 
-            return function(){
+            return function(){            // This function has the access of color(lexical scoping) 
                 document.body.style.backgroundColor = `${color}`
             }
         }
