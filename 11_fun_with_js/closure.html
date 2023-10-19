@@ -10,48 +10,49 @@
     <button id="green">Green</button>
 </body>
 
-    <script>
-    // function init() {
-    //     let name = "Mozilla"; 
-    //     function displayName() {
-    //         console.log(name); 
-    //     }
-    //     displayName();
-    // }
-    // init();
+    <script>     
+                // lexical scope
+        // function init() {
+        //     let name = "Mozilla"; 
+        //     function displayName() {
+        //         console.log(name);    // inner function has the access of outer function variables
+        //     }
+        //     displayName();
+        // }
+        // init();
 
-    // function outer(){
-    //     let username = "hitesh"
-    //     console.log("OUTER", secret);
-    //     function inner(){
-    //         let secret = "my123"
-    //         console.log("inner", username);
-    //     }
-    //     function innerTwo(){
-    //         console.log("innerTwo", username);
-    //         console.log(secret);
-    //     }
-    //     inner()
-    //     innerTwo()
+        // function outer(){
+        //     let username = "harshil"
+        //     console.log("OUTER", secret);            // error
+        //     function inner(){
+        //         let secret = "my123"                 // outer function does't have the access to 
+        //         console.log("inner", username);      // inner function variables. 
+        //     }
+        //     function innerTwo() {                    // inner function doen't have the access to 
+        //         console.log("innerTwo", username);   // another inner funtion variables.
+        //         console.log(secret);                                // error
+        //     }
+        //     inner()
+        //     innerTwo()
+        // }
+        // outer()
+        // console.log("TOO OUTER", username);          // error
 
-    // }
-    // outer()
-    // console.log("TOO OUTER", username);
+        //         // closure
+        // function makeFunc() {
+        //     const name = "Mozilla";
+        //     function displayName() {
+        //         console.log(name);
+        //     }
+        //     return displayName;     // when the function is returned then it means that its entire
+        // }                           // lexical scope is returned not only the contents of function
 
-
-    // function makeFunc() {
-    //     const name = "Mozilla";
-    //     function displayName() {
-    //         console.log(name);
-    //     }
-    //     return displayName;     // when the function is returned then it means that its entire
-    // }                           // lexical scope is returned not only the contents of function.
-
-    // const myFunc = makeFunc();
-    // myFunc();
+        // const myFunc = makeFunc();              // myFunc stores the reference of displayName
+        // myFunc();                               // <--
 
     </script>
     <script>
+                    // Real world scenario example
         // document.getElementById("orange").onclick = function(){
         //     document.body.style.backgroundColor = `orange`
         // }
